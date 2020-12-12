@@ -32,9 +32,11 @@ function gulpJs() {
 function pugCompilation(){
   return gulp
   .src('views/*.pug')
-  .pipe(pug(
-    gulp.dest('build/')
-  ))
+  .pipe(pug({
+    doctype: 'html',
+    pretty: true
+  }))
+  .pipe(gulp.dest('build/'));
 }
 
 function gulpWatch() {
