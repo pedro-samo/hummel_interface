@@ -1,0 +1,36 @@
+#listagemProdutos {
+    .span3 {
+        margin-left: 0 !important;
+        width: 25% !important;
+        .listagem-item {
+            border: none;
+            box-shadow: none;
+            transition: all .3s;
+            padding: 0;
+            &:hover {
+                outline: 1px solid rgba(0, 0, 0, 0.3);
+            }
+        }
+        .info-produto a {
+            text-align: center;
+            min-height: auto;
+        }
+    }
+}
+
+.listagem .listagem-item .nome-produto {
+    font-weight: 600;
+    font-size: 16px !important;
+}
+
+.listagem .info-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preco-produto.destaque-parcela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

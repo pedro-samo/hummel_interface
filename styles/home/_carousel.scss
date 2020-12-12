@@ -1,0 +1,18 @@
+.conteiner-principal {
+    .secao-banners {
+        margin-top: 165px;
+    }
+    .conteiner {
+        padding: 0px;
+        box-shadow: none;
+    }
+}
+
+.flexslider {
+    border: none;
+    border-radius: 0;
+}
+
+.banner.cheio+.row-fluid {
+    margin: 10px;
+}

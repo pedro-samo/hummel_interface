@@ -1,0 +1,167 @@
+#cabecalho {
+    font-size: 14px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 50px;
+    z-index: 98;
+    transition: all .2s;
+    .conteiner {
+        padding: 0px;
+        width: 100%;
+        max-width: none !important;
+        .row-fluid {
+            margin: 0 auto;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1150px;
+            .span3 {
+                .logo a {
+                    margin-top: -25px;
+                    height: 150px;
+                    width: 100%;
+                    img {
+                        transition: all .2s;
+                    }
+                }
+            }
+            .span4 {
+                width: 35%;
+                li {
+                    margin-right: 0px;
+                }
+            }
+            .conteudo-topo.span9 {
+                width: 80%;
+                font-size: 16px;
+                margin: 0 auto;
+                .acoes-conta.borda-alpha li {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.superior.row-fluid {
+    margin-bottom: 10px !important;
+    .span4 {
+        .acoes-conta.borda-alpha li {
+            margin: 0;
+            i {
+                width: 30px;
+                height: 30px;
+                padding: 6px;
+                border-radius: 50px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.inferior.row-fluid {
+    .busca.borda-alpha {
+        background-color: none;
+        border: none;
+        padding: 0;
+        border-radius: 15px;
+        #form-buscar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #auto-complete {
+                width: 100%;
+                background-color: #303030;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                color: gray !important;
+                font-family: 'Exo', sans-serif;
+            }
+        }
+        .botao.botao-busca {
+            height: 35px;
+            border: none;
+            right: none;
+            position: none;
+            top: none;
+        }
+    }
+}
+
+.carrinho {
+    border-radius: 50px;
+    width: 92%;
+    i {
+        border-radius: 50px;
+    }
+}
+
+.logo.cor-secundaria .titulo {
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+}
+
+.logo-centro .row-fluid {
+    padding-top: 15px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.row-fluid {
+    padding-top: 0px;
+}
+
+.barra-inicial {
+    background-color: #303030;
+}
+
+.menu.superior {
+    background-color: #303030;
+    margin-top: 0px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.menu.superior strong {
+    color: white;
+    transition: all .5s;
+}
+
+.menu.superior strong:hover {
+    color: gray;
+    font-size: 17px;
+}
+
+.menu.superior .nivel-um>li {
+    border: none;
+}
+
+.menu .nivel-dois a {
+    color: white;
+}
+
+.menu .nivel-dois a:hover {
+    color: gray;
+}
+
+.busca {
+    padding: 10px;
+    background-color: #303030;
+}
+
+.busca input {
+    border-radius: 0;
+}
+
+.busca .botao-busca {
+    background-image: none;
+}
