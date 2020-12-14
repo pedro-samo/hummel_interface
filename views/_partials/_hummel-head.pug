@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')/
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')/
+        meta(name='viewport', content='minimal-ui, width=device-width,initial-scale=1')/
+    
+        //- Styles
+        link(rel='stylesheet', src='Hummel-pdp.css', media='all')/
+
+    body
+
+        //- Main Content
+        main(role='main', class=`x-${$templateClass}__main`)
+            block content
+
+        //- Scripts
+        block scripts
+            script(type='text/javascript',
+                src='Hummel-pdp.css')
+    
+
+
+
+
+

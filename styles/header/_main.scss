@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap');
-@import 'topbar';
-@import 'header';
-@import 'carousel';
-@import 'lateral-menu';
-@import 'shelve';
-@import 'components';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,8 +12,4 @@ body {
     background-attachment: scroll;
     background-repeat: repeat;
     background-color: white;
-}
-
-#barraTopo {
-    display: none !important;
 }
