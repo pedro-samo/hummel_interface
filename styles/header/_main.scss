@@ -1,15 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap');
+.hummel__pdp__header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid $color-gray-light;
+    width: 100%;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;   
-}
+    &-topbar{
+        background-color: $color-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 5px;
+        }
+        svg{
+        fill: $color-gray;
+        margin-right: 5px;
+        }
+    }
 
-body {
-    font-family: 'Exo', sans-serif;
-    background-position: top center;
-    background-attachment: scroll;
-    background-repeat: repeat;
-    background-color: white;
+    &-content{
+        @include flexbox;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        div{
+            @include flexbox;
+            justify-content: center;
+        }
+        @media (min-width: $screen-md){
+            width: 80%;
+        }
+        @media (min-width: $screen-lg){
+            width: 70%;
+        }
+
+        &-menu{
+            @include flexbox;
+            justify-content: center;
+            margin-right: 5px;
+            svg{
+                margin-top: 2px;
+                width: 65%; 
+            }
+            @media (min-width: $screen-md){
+                display: none;
+            }          
+        }
+
+        &-list{
+            ul{
+            @include flexbox;
+            list-style-type: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 10px 20px;
+
+            li{
+            padding: 0px 20px;
+            }
+
+            @media (max-width: $screen-md){
+                display: none;
+            }
+            }
+        }
+
+        &-form{
+            width: 300px;
+            height: 50px;
+            margin-right: 20px;
+            @media (max-width: $screen-sm){
+                display: none !important;
+            }
+            form{
+                width: 100%;
+                input{
+                    border: 1px solid $color-gray-light;
+                    height: 50px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &-search{
+            margin-right: 15px;
+            @media (min-width: $screen-sm){
+                display: none !important;
+            }
+            svg{
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &-user{
+            margin-right: 12px;
+            @media (max-width: $screen-sm){
+                display: none !important;
+            }
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &-user{
+            @media (max-width: $screen-sm){
+                display: none !important;
+            }
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &-cart{
+            margin-right: 12px;
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
 }

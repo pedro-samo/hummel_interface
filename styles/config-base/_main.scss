@@ -14,11 +14,21 @@
  */
 
 $color-white         : #fff;
-$color-gray-light    : #eee;
+$color-gray-light    : rgb(216, 216, 216);
 $color-gray          : #858585;
 $color-gray-dark     : #222;
 $color-black         : #000;
 $color-green         : #24B26D;
+
+/**
+ * Colors
+ */
+
+@mixin flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 * {
     box-sizing: border-box;
