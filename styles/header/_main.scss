@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: $color-white;
     border-bottom: 1px solid $color-gray-light;
     width: 100%;
 
@@ -78,11 +79,18 @@
                 display: none !important;
             }
             form{
+                @include flexbox;
                 width: 100%;
+                span{
+                    margin-right: -25px;
+                    z-index: 2;
+                }
                 input{
                     border: 1px solid $color-gray-light;
                     height: 50px;
                     width: 100%;
+                    font-weight: 500;
+                    padding-left: 40px;
                 }
             }
         }
