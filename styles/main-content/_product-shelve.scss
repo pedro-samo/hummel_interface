@@ -1,0 +1,54 @@
+.hummel__pdp__shelve {
+    width: 100%;
+    margin: 50px auto;
+    width: 80%;
+    padding-bottom: 70px;
+    @media (max-width: $screen-sm) {
+        width: 100%;
+        margin: 10px auto;
+        padding-bottom: 90px;
+    }
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 50px 0;
+        &-box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+            }
+            span {
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .hummel__pdp__shelve__content-box.fourth {
+        display: none;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    .hummel__pdp__shelve__content-box.third {
+        display: none;
+    }
+}
+
+$screen-sm: 768px !default;
+$screen-md: 1024px !default;
