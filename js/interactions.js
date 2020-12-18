@@ -1,11 +1,9 @@
 window.onscroll = function() { menuScroll() };
 
-window.onload = function() { swalFunc() };
-
-function swalFunc() {
+function showError(text) {
   Swal.fire({
     title: 'Error!',
-    text: 'Produto Inválido. Verifique o ID digitado.',
+    text,
     icon: 'error',
     confirmButtonText: 'OK'
   })
