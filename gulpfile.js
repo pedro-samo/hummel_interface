@@ -1,8 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglifyes');
 const pug = require('gulp-pug');
 
 
@@ -17,9 +16,6 @@ function gulpJs() {
   return gulp
     .src('js/*.js')
     .pipe(concat('Hummel-pdp.js'))
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
     .pipe(uglify())
     .pipe(gulp.dest('dist/'))
 }
