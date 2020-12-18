@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
@@ -16,7 +15,7 @@ function sassCompilation() {
 
 function gulpJs() {
   return gulp
-    .src('js/home/*.js')
+    .src('js/*.js')
     .pipe(concat('Hummel-pdp.js'))
     .pipe(babel({
       presets: ['@babel/env']
