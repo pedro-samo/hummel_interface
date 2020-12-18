@@ -47,3 +47,5 @@ exports.gulpJs = gulpJs;
 exports.gulpWatch = gulpWatch;
 
 exports.default = gulp.parallel(gulpWatch, sassCompilation, gulpJs, pugCompilation);
+
+exports.build = gulp.parallel(sassCompilation, gulpJs, pugCompilation);

@@ -6,7 +6,8 @@
   "repository": "https://github.com/pedro-samo/hummel_interface",
   "author": "Pedro Morais <pedro.s.morais@gmail.com>",
   "scripts": {
-    "build": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "dependencies": {
     "bootstrap-icons": "^1.2.1",
