@@ -5,6 +5,9 @@
   "license": "MIT",
   "repository": "https://github.com/pedro-samo/hummel_interface",
   "author": "Pedro Morais <pedro.s.morais@gmail.com>",
+  "scripts": {
+    "build": "gulp"
+  },
   "dependencies": {
     "bootstrap-icons": "^1.2.1",
     "gulp": "^4.0.2",
