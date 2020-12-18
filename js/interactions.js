@@ -15,7 +15,7 @@ function menuScroll() {
   const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
   const floatMenu = document.getElementsByClassName('hummel__pdp__float')[0];
   windowScroll > 200 ?
-    floatMenu.style.cssText = "max-height: 150px" :
+    floatMenu.style.cssText = "max-height: 200px" :
     floatMenu.style.cssText = "max-height: 0";
 }
 

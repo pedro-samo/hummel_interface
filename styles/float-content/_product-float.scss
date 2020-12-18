@@ -8,6 +8,10 @@
     background-color: $color-white;
     transition: max-height .5s ease-out;
     max-height: 0;
+    @media (max-width: $screen-xs) {
+        background-color: transparent;
+        box-shadow: none;
+    }
     &__container {
         padding: 15px;
         @media (min-width: $screen-md) {

@@ -1,4 +1,4 @@
-/* async function getProductInfo(productId) {
+async function getProductInfo(productId) {
   const proxyURI = "https://cors-anywhere.herokuapp.com/";
   const productURI = `https://www.hummelbrasil.com/api/catalog_system/pub/products/search/?fq=productId:${productId}`;
 
@@ -22,5 +22,7 @@ const getMainProductInfo = async() => {
   }
   const result = await getProductInfo(productId);
   return result[0];
+}
 
-}; */
+getMainProductInfo();
+console.log(getMainProductInfo());
