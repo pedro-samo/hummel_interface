@@ -1,7 +1,12 @@
 function setMainImage(src) {
   const mainImage = document.querySelector("#main-img");
   if (!mainImage) return;
+  mainImage.src = src;
+};
 
+function setSecondImage(src) {
+  const secondImage = document.querySelector("#second-img");
+  if (!secondImage) return;
   mainImage.src = src;
 };
 
@@ -29,6 +34,7 @@ async function setProductData() {
   title.innerText = mainProductInfo.productName;
 
   setMainImage(mainProductInfo.items[0].images[0].imageUrl);
+  setSecondImage(mainProductInfo.items[0].images[1].imageUrl);
   //bestPrice.innerText = mainProductInfo.
   sku.innerText = mainProductInfo.productReference;
 

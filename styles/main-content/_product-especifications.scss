@@ -12,8 +12,6 @@
         padding: 15px 0;
         &-text {
             margin-top: 10px;
-        }
-        #productdescription {
             @media (max-width: $screen-md) {
                 display: none;
             }

@@ -19,7 +19,7 @@ function menuScroll() {
 
 const descButton = document.querySelector('.hummel__pdp__especifications__descriptions');
 descButton.addEventListener('click', function() {
-  document.querySelector('#productdescription').classList.toggle('is-active');
+  document.querySelector('.hummel__pdp__especifications__descriptions-text').classList.toggle('is-active');
   document.querySelector('.hummel__pdp__especifications__descriptions > h3').classList.toggle('is-minus');
 });
 
