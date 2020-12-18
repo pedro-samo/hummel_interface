@@ -11,10 +11,6 @@ function sassCompilation() {
   return gulp
     .src('styles/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
     .pipe(gulp.dest('dist/'))
 }
 
