@@ -7,7 +7,7 @@ function setMainImage(src) {
 function setSecondImage(src) {
   const secondImage = document.querySelector("#second-img");
   if (!secondImage) return;
-  mainImage.src = src;
+  secondImage.src = src;
 };
 
 async function setProductData() {
