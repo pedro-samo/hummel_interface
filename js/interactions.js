@@ -1,5 +1,16 @@
 window.onscroll = function() { menuScroll() };
 
+window.onload = function() { swalFunc() };
+
+function swalFunc() {
+  Swal.fire({
+    title: 'Error!',
+    text: 'Produto Inválido. Verifique o ID digitado.',
+    icon: 'error',
+    confirmButtonText: 'OK'
+  })
+}
+
 function menuScroll() {
   const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
   const floatMenu = document.getElementsByClassName('hummel__pdp__float')[0];
