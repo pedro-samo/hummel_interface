@@ -10,6 +10,10 @@ async function setProductData() {
   //const bestprie = document.querySelector('#bestprice');
   const sku = document.querySelector('#productid');
   const description = document.querySelectorAll('#productdescription');
+  const genero = document.querySelector('#productgenero');
+  const cor = document.querySelector('#productcolor');
+  const caracteristicas = document.querySelector('#productcaract');
+  const composicao = document.querySelector('#productcomp');
 
   if (!title) return;
 
@@ -23,11 +27,22 @@ async function setProductData() {
   }
 
   title.innerText = mainProductInfo.productName;
+
   setMainImage(mainProductInfo.items[0].images[0].imageUrl);
   //bestPrice.innerText = mainProductInfo.
   sku.innerText = mainProductInfo.productReference;
-  description.innerText = mainProductInfo.description;
 
+  description.forEach(function(item) {
+    item.innerText = mainProductInfo.description;
+  });
+
+  genero.innerText = mainProductInfo.Gênero[0];
+
+  cor.innerText = mainProductInfo.Cor[0];
+
+  caracteristicas.innerText = mainProductInfo.Características[0];
+
+  composicao.innerText = mainProductInfo.Composição[0];
 };
 
 setProductData();
