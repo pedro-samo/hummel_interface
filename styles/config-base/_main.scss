@@ -3,28 +3,39 @@
 /**
  * Screen Sizes
  */
- $screen-xs : 420px !default;
- $screen-sm : 768px !default;
- $screen-md : 1024px !default;
- $screen-lg : 1200px !default;
- $screen-xl : 1920px !default; 
+
+$screen-xs: 420px !default;
+$screen-sm: 768px !default;
+$screen-md: 1024px !default;
+$screen-lg: 1200px !default;
+$screen-xl: 1920px !default;
 
 /**
  * Colors
  */
 
-$color-white         : #fff;
-$color-gray-light    : rgb(216, 216, 216);
-$color-gray          : #858585;
-$color-gray-dark     : #222;
-$color-black         : #000;
-$color-green         : #24B26D;
+$color-white: #fff;
+$color-gray-light: rgb(216,
+216,
+216);
+$color-gray: #858585;
+$color-gray-dark: #222;
+$color-black: #000;
+$color-green: #24B26D;
 
 /**
  * Colors
  */
 
-@mixin flexbox{
+.is-hide {
+    display: none;
+}
+
+.is-active {
+    display: block !important;
+}
+
+@mixin flexbox {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,10 +44,12 @@ $color-green         : #24B26D;
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
-body, input, button {
+body,
+input,
+button {
     font-family: 'Montserrat', sans-serif;
     background-position: top center;
     background-attachment: scroll;
@@ -44,6 +57,6 @@ body, input, button {
     background-color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }

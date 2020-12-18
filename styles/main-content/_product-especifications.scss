@@ -1,33 +1,58 @@
-.hummel__pdp__especifications{
+.hummel__pdp__especifications {
     padding: 20px 10px;
     width: 100%;
     font-weight: 500;
-    @media (min-width: $screen-lg){
+    @media (min-width: $screen-lg) {
         width: 80%;
         margin: 0 auto;
         flex-direction: row;
         align-items: flex-start;
     }
-
-    &__descriptions{
+    &__descriptions {
         padding: 15px 0;
-        &-text{
+        &-text {
             margin-top: 10px;
         }
+        #productdescription {
+            @media (max-width: $screen-md) {
+                display: none;
+            }
+        }
+        h3 {
+            @media (max-width: $screen-md) {
+                background: url(https://www.hummelbrasil.com/arquivos/plus.svg) right center no-repeat;
+                background-size: 27px;
+                cursor: pointer;
+            }
+        }
     }
-
-    &__feat{
+    &__feat {
         padding: 15px 0;
-        &-box{
-            h4{
+        &-box {
+            h4 {
                 padding: 15px 0;
             }
-            p{
+            p {
                 margin-bottom: 10px;
             }
-            li{
+            li {
                 margin-bottom: 10px;
             }
-        }  
+            @media (max-width: $screen-md) {
+                display: none;
+            }
+        }
+        h3 {
+            @media (max-width: $screen-md) {
+                background: url(https://www.hummelbrasil.com/arquivos/plus.svg) right center no-repeat;
+                background-size: 27px;
+                cursor: pointer;
+            }
+        }
     }
+}
+
+.is-minus {
+    background: url(https://www.hummelbrasil.com/arquivos/minus.svg) right center no-repeat !important;
+    background-size: 27px !important;
 }

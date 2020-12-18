@@ -9,34 +9,34 @@ const pug = require('gulp-pug');
 
 function sassCompilation() {
   return gulp
-  .src('styles/*.scss')
-  .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-    cascade: false
-  }))
-  .pipe(gulp.dest('build/'))
+    .src('styles/*.scss')
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('dist/'))
 }
 
 function gulpJs() {
   return gulp
-  .src('js/home/*.js')
-  .pipe(concat('Hummel-pdp.js'))
-  .pipe(babel({
-    presets: ['@babel/env']
-  }))
-  .pipe(uglify())
-  .pipe(gulp.dest('build/'))
+    .src('js/home/*.js')
+    .pipe(concat('Hummel-pdp.js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/'))
 }
 
-function pugCompilation(){
+function pugCompilation() {
   return gulp
-  .src('views/*.pug')
-  .pipe(pug({
-    doctype: 'html',
-    pretty: true
-  }))
-  .pipe(gulp.dest('build/'));
+    .src('views/*.pug')
+    .pipe(pug({
+      doctype: 'html',
+      pretty: true
+    }))
+    .pipe(gulp.dest('dist/'));
 }
 
 function gulpWatch() {

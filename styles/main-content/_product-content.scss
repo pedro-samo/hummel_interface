@@ -1,85 +1,79 @@
-.hummel__pdp__maincontent{
+.hummel__pdp__maincontent {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media (min-width: $screen-lg){
+    @media (min-width: $screen-lg) {
         width: 80%;
         margin: 0 auto;
         flex-direction: row;
         align-items: flex-start;
     }
-
-    img{
+    img {
         width: 100%;
     }
-
-    &__imgs{
+    &__imgs {
         padding: 20px 10px;
         width: 100%;
-        &__main{
+        &__main {
             max-width: 90%;
             margin: 0 auto;
         }
-        &__second{
+        &__second {
             max-width: 45%;
             margin: 0 auto;
         }
-        @media (min-width: $screen-lg){
+        @media (min-width: $screen-lg) {
             margin-right: 60px;
         }
     }
-
-    &__infos{
+    &__infos {
         padding: 20px 10px;
         width: 100%;
-        @media (min-width: $screen-lg){
+        @media (min-width: $screen-lg) {
             padding: 40px 60px;
         }
-
-        &-productname{
+        &-productname {
             font-size: 26px;
         }
-        &-sku{
+        &-sku {
             @include flexbox;
             margin: 10px 0;
             color: $color-gray;
             font-size: 14px;
-            span{
+            span {
                 margin-left: 5px;
             }
         }
-
-        &-price{
+        &-price {
             padding: 15px 0;
-            #oldprice{
+            #oldprice {
                 font-size: 18px;
                 text-decoration: line-through;
                 font-weight: 300;
             }
-            #bestprice{
+            #bestprice {
                 font-size: 26px;
                 font-weight: 700;
             }
         }
-
-        &-sizes{
+        &-sizes {
             align-self: flex-start;
             padding: 15px 0;
-            @media (min-width: $screen-lg){
+            @media (min-width: $screen-lg) {
                 padding: 25px 0px;
             }
-            p{
+            p {
                 font-size: 14px;
-                margin:10px 0;
+                margin: 10px 0;
                 font-weight: 700;
                 text-transform: uppercase;
             }
-            div{
+            div {
                 @include flexbox;
             }
-            label{
+            label {
                 @include flexbox;
                 margin-right: 12px;
                 justify-content: center;
@@ -89,18 +83,17 @@
                 border: 1px solid $color-gray-light;
             }
         }
-
-        &-colors{
+        &-colors {
             padding: 15px 0;
-            p{
+            p {
                 font-weight: 700;
                 text-transform: uppercase;
             }
-            &-content{
+            &-content {
                 @include flexbox;
                 padding: 10px 0;
                 align-self: start;
-                div{
+                div {
                     padding: 10px 0;
                     width: 70px;
                     margin-right: 12px;
@@ -108,32 +101,37 @@
                 }
             }
         }
-
-        &-buybutton{
-            margin: 10px 0;
-            width: 100%;
-            background-color: $color-black;
-            padding: 20px 10px;
+        &-buybutton {
+            margin: 20px 0 10px;
             text-align: center;
-            :hover{
+            width: 100%;
+             :hover {
                 background-color: $color-green;
             }
-            a{
+            a {
+                max-width: 100%;
+                white-space: nowrap;
+                background-color: $color-black;
+                padding: 20px 200px;
                 color: $color-white;
                 font-size: 17px;
+                @media (max-width: $screen-md) {
+                    padding: 20px 150px;
+                }
+                @media (max-width: $screen-sm) {
+                    padding: 20px 70px;
+                }
             }
         }
-
-        &-description{
+        &-description {
             display: none;
-            h3{
+            h3 {
                 margin: 10px 0;
             }
-            p{
+            p {
                 line-height: 25px;
             }
-
-            @media (min-width: $screen-lg){
+            @media (min-width: $screen-lg) {
                 padding: 30px 0;
                 display: block;
             }
